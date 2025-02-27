@@ -11,7 +11,7 @@ The experiments were conducted using an **Anaconda environment**. To set up the 
         git clone git@github.com:ojanenmarianna/mocpd.git
         cd mocpd
 
-3. Create and activate the environment, in the yml-file replace <env_name> with the environment name you want to use (e.g. mocpd) and <path_to_env> with the path to your conda environments. After replacing them, run:
+3. Create and activate the environment; in the yml-file replace <env_name> with the environment name you want to use (e.g. mocpd) and <path_to_env> with the path to your conda environments. After replacing them, run:
 
         conda env create -f conda_env.yml
         conda activate <env_name>
@@ -21,11 +21,17 @@ The experiments were conducted using an **Anaconda environment**. To set up the 
 ### Included datasets
 
 - Synthetic datasets for testing can be created using the following functions:  
-  - **generate_multivariate_signal**  
+  - **generate_multivariate_signal**
   - **create_s_abrupt**  
-  - **create_s_gradual**  
-- Real-world datasets are not included in this repository but can be downloaded from the following sources:
-  - TODO: Add links or references to the datasets here.
+  - **create_s_gradual**
+- The synthetic anomaly datasets can be downloaded from <https://github.com/Mohamed164/AD-microservice-app/tree/main>
+- Real-world datasets are not included in this repository but were obtained in 2024 from the following sources:
+  - Electricity Transformer Dataset (ETDataset): <https://github.com/zhouhaoyi/ETDataset> 
+  - Electricity Load Diagrams (ELD): <https://archive.ics.uci.edu/dataset/321/electricityloaddiagrams20112014>
+  - Datasets annotated by the Turing Institute:
+    - Bee Waggle: <https://www.cc.gatech.edu/~borg/ijcv_psslds/>
+    - Room Occupancy: <https://archive.ics.uci.edu/ml/datasets/Occupancy+Detection+>
+    - Run Log: <https://github.com/alan-turing-institute/TCPD/tree/master/datasets/run_log>
 
 
 ### Adding datasets
@@ -35,7 +41,10 @@ Place the datasets into `./src/data` directory.
 ## Running the Experiments
 
 TODO: run all experiments
-TODO: run a specific method with a specific dataset
+
+You can run CPD with a specific method for a particular dataset by running the `test_method.py` file. Replace <method_name> with the method you want to use and <dataset_name> with the dataset you want to run the CPD to:
+
+        python3 test_method.py <method_name> <dataset_name>
 
 ## Results
 
@@ -43,4 +52,4 @@ TODO: run a specific method with a specific dataset
 
 ## References
 
-TODO: Add link to relevan papers/repositiories
+TODO: Add links to relevant papers/repositories
