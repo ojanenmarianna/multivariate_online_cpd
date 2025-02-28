@@ -8,8 +8,8 @@ The experiments were conducted using an **Anaconda environment**. To set up the 
 
 1. Clone the repository:
 
-        git clone git@github.com:ojanenmarianna/mocpd.git
-        cd mocpd
+        git clone git@github.com:ojanenmarianna/multivariate_online_cpd.git
+        cd multivariate_online_cpd
 
 3. Create and activate the environment; in the yml-file replace <env_name> with the environment name you want to use (e.g. mocpd) and <path_to_env> with the path to your conda environments. After replacing them, run:
 
